@@ -1,5 +1,3 @@
  ### :heavy_check_mark: What you should see.
--  When you click on the "Generate" button, you should see a new random quote and the corresponding author.
--  Top Five Random Quote Generator APIs (not free) :https://rapidapi.com/guides/top-five-random-quote-generator-apis
-
+This program is a countdown that counts down from a given deadline of dates. It uses the time module, which is useful to know about and easy to use.
 Happy coding! (^_^)

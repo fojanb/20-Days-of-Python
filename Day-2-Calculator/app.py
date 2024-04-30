@@ -1,21 +1,43 @@
-user_input_num_1 = input("Please enter your first number >> ")
-user_input_num_2 = input("Please enter your second number >> ")
-user_input_opertaion = input("Please choose your operation from this list [ +  -  /  * ] >> ")
-user_inputs = {"num_1":user_input_num_1,"operation":user_input_opertaion,"num_2":user_input_num_2}
 
-def calcualte():
-   match user_inputs["operation"]:
-       case "-" :
-           return int(user_inputs["num_1"]) - int(user_inputs["num_2"])
-       case "+" :
-           return int(user_inputs["num_1"]) + int(user_inputs["num_2"])
-       case "/" :
-            if(not int(user_inputs["num_2"])):
-                return "Division by zero. Danger zone !!"
-            else:
-                return int(user_inputs["num_1"]) / int(user_inputs["num_2"])
-       case "*" :
-           return int(user_inputs["num_1"]) * int(user_inputs["num_2"])
+def get_user_inputs():
+    print("===== Welcome to the Calculator App =====")
+    user_input_opertaion = input(" Enter 'a' for addition\n Enter 's' for subtraction\n Enter 'm' for multiplicatio\n Enter 'd' for division\n >>")
+    user_input_num_1 = input("Please enter your first number >> ")
+    user_input_num_2 = input("Please enter your second number >> ")
+    user_inputs = {"num_1":user_input_num_1,"operation":user_input_opertaion,"num_2":user_input_num_2}
+    print(f"Ans = {claculator(user_inputs)}")
+    rerender_app()
     
-print(f"Result is: {calcualte()}")
-
+def handle_error():
+    try_again = input("Not a valid operation. Do you want to try again? (y/n)\n")
+    if(try_again == "y" or "Y"):
+        get_user_inputs()
+        
+def claculator(data):
+    if(data["operation"].isalpha()):
+        match data["operation"]:
+            case "s" :
+                return int(data["num_1"]) - int(data["num_2"])
+            case "a" :
+                return int(data["num_1"]) + int(data["num_2"])
+            case "d" :
+                if(not int(data["num_2"])):
+                    return "Division by zero. Danger zone !!"
+                else:
+                    return int(data["num_1"]) / int(data["num_2"])
+            case "m" :
+                return int(data["num_1"]) * int(data["num_2"])
+            case _ :
+                handle_error()
+    else:
+        handle_error()
+       
+def rerender_app():
+    user_wants_to_rerender_app = input("Would you like to do more calculations? (y/n)\n")
+    if(user_wants_to_rerender_app == "y"):
+        get_user_inputs()
+    else:
+        print("Thanks for using our app. See you later.")
+        exit(0)
+    
+get_user_inputs()

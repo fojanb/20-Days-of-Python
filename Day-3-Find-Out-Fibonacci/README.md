@@ -1,0 +1,1 @@
+This app will receive an integer positive number from input and generate n first number in Fibonacci

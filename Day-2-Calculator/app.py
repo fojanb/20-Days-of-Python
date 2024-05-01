@@ -1,15 +1,16 @@
 
+from colors import GREEN,RED,BRIGHT_MAGENTA,BRIGHT_YELLOW,BLUE,RESET
 def get_user_inputs():
     print("===== Welcome to the Calculator App =====")
     user_input_opertaion = input(" Enter 'a' for addition\n Enter 's' for subtraction\n Enter 'm' for multiplicatio\n Enter 'd' for division\n >>")
-    user_input_num_1 = input("Please enter your first number >> ")
-    user_input_num_2 = input("Please enter your second number >> ")
+    user_input_num_1 = input(GREEN + "Please enter your first number >> " + RESET)
+    user_input_num_2 = input(BRIGHT_MAGENTA + "Please enter your second number >> " + RESET)
     user_inputs = {"num_1":user_input_num_1,"operation":user_input_opertaion,"num_2":user_input_num_2}
-    print(f"Ans = {claculator(user_inputs)}")
+    print(BRIGHT_YELLOW + f"Ans = {claculator(user_inputs)}" + RESET)
     rerender_app()
     
 def handle_error():
-    try_again = input("Not a valid operation. Do you want to try again? (y/n)\n")
+    try_again = input(RED + "Not a valid operation. Do you want to try again? (y/n)\n"+RESET)
     if(try_again == "y" or "Y"):
         get_user_inputs()
         
@@ -33,7 +34,7 @@ def claculator(data):
         handle_error()
        
 def rerender_app():
-    user_wants_to_rerender_app = input("Would you like to do more calculations? (y/n)\n")
+    user_wants_to_rerender_app = input(BLUE + "Would you like to do more calculations? (y/n)\n" + RESET)
     if(user_wants_to_rerender_app == "y"):
         get_user_inputs()
     else:

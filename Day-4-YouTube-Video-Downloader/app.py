@@ -14,8 +14,8 @@ d_video = mp4_streams[-1]
 
 try: 
     d_video.download(output_path=SAVE_PATH)
-    print('▄▄▄▄▄▄▄▄▄▄▄▄ Video downloaded successfully! ▄▄▄▄▄▄▄▄▄▄▄▄')
-    print(f'🚀 Find the video here {SAVE_PATH} on your PC 🚀')
+    print('========== Video downloaded successfully! ==========')
+    print(f'🚀 Find the video here {SAVE_PATH} on your PC')
 
 except: 
     print("Some Error!")

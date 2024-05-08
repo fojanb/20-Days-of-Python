@@ -25,6 +25,17 @@ The latest version of Python, offers a rich set of tools and libraries specifica
 ### 6. PyautoGUI
 ### 7. Schedule
 ### 8. Pandas 
+|              | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| Purpose      | git status     | git status    |
+| Ease-of-use  | git diff       | git diff      |
+| Speed        | git diff       | git diff      |
+| Learning Curve| git diff       | git diff      |
+| Documentation  | git diff       | git diff      |
+| JavaScript Support  | git diff       | git diff      |
+| CPU and Memory Usage  | git diff       | git diff      |
+| Size of Web Scraping Project Supported  | git diff       | git diff      |
+
 
  
 ### Running and test

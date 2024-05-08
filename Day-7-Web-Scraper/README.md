@@ -26,7 +26,7 @@ The latest version of Python, offers a rich set of tools and libraries specifica
 ### 7. Schedule
 ### 8. Pandas 
 |              | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
+| :---         |     :---      |          :--- |
 | Purpose      | git status     | git status    |
 | Ease-of-use  | git diff       | git diff      |
 | Speed        | git diff       | git diff      |

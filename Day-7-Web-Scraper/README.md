@@ -16,6 +16,7 @@ Essential Packages and Tools for Python Web Scraping
 The latest version of Python, offers a rich set of tools and libraries specifically designed for web scraping, making it easier than ever to retrieve data from the web efficiently and effectively.
 
 1. Requests Module
+-The requests library is used for making HTTP requests to a specific URL and returns the response. Python requests provide inbuilt functionalities for managing both the request and response.
 2. BeautifulSoup Library
 3. Selenium
 4. Lxml 

@@ -7,8 +7,20 @@ import csv
 # which means 5 remaining repos are private. 48 repos are public
 response = get("https://github.com/fojanb?page=1&tab=repositories")
 if response.status_code == 200:
+    final_data = []
     # print(response.text)
     my_soup = BeautifulSoup(response.text,'html.parser')
     all_repo_titles = my_soup.select('h3.wb-break-all a')
+    print(all_repo_titles)
     for title in all_repo_titles:
-        print(f"{title.text}")
+        final_data.append(title.text)
+
+filename = 'github_reops.csv'
+header = ["Repo Name"]
+with open(filename, 'w', newline="") as file:
+    csvwriter = csv.writer(file) # 2. create a csvwriter object
+    csvwriter.writerow(header) # 4. write the header
+    for item in final_data:
+        csvwriter.writerows(item) # 5. write the rest of the data
+
+# https://www.analyticsvidhya.com/blog/2021/08/python-tutorial-working-with-csv-file-for-data-science/

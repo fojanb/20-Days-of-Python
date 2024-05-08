@@ -37,11 +37,11 @@ The latest version of Python, offers a rich set of tools and libraries specifica
 |CPU and Memory Usage|Low|Low|Low|High|
 |Size of Web Scraping Project Supported|Large and small|Large and small|Large and small|Small|
 
-
  
 ### Running and test
 
 At the start you see a command that asks if you want to start a new game. Type "yes" and hit enter to start the game. If you type "no" and then u hit enter you would exit the game. This process happens at the end of each round though. Whether you win or lose. After submitting yes, you will be asked to guess a letter, if you guess a letter that exist in the randomly picked word from an animation movie array, it would show up on the screen. Otherwise you would see underscores indicating the unguessed letters. You would have 15 chances to guess the whole word by guessing each letters.
+Note: You need to customize the scraping logic based on the structure of the website you're scraping. 
 
 ## Deployment
 

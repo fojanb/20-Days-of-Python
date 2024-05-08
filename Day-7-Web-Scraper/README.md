@@ -1,6 +1,7 @@
 # Web-Scraper
 
-Web-Scraper is an app that makes it possible to scrape data from a URL. 
+Web-Scraper is a CLI application that makes it possible to scrape data from a URL.
+To scrape data from a website and save it to a CSV file, Python developers often use libraries like requests for making HTTP requests and BeautifulSoup from the bs4 package for parsing HTML content. Additionally, the csv module from Python's standard library is typically used to write data into a CSV file.
 
 ### Getting Started 
 

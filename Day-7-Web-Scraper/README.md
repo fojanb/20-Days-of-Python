@@ -15,14 +15,16 @@ Web scraping, the process of extracting data from websites, has emerged as a pow
 Essential Packages and Tools for Python Web Scraping
 The latest version of Python, offers a rich set of tools and libraries specifically designed for web scraping, making it easier than ever to retrieve data from the web efficiently and effectively.
 
-1. Requests Module
--The requests library is used for making HTTP requests to a specific URL and returns the response. Python requests provide inbuilt functionalities for managing both the request and response.
-2. BeautifulSoup Library
-3. Selenium
-4. Lxml 
-5. Urllib Module
-6. PyautoGUI
-7. Schedule
+### 1. Requests Module
+-find the API Documentation here : https://requests.readthedocs.io/en/latest/api/
+### 2. BeautifulSoup Library
+-Beautiful Soup is a Python library that works with a parser to extract data from HTML and can turn even invalid markup into a parse tree. However, this library is only designed for parsing and cannot request data from web servers in the form of HTML documents/files. For this reason, it's mostly used alongside the Python Requests Library. Note that Beautiful Soup makes it easy to query and navigate the HTML but still requires a parser. The following example demonstrates the use of the html.parser module, which is part of the Python Standard Library. 
+### 3. Selenium
+### 4. Lxml 
+### 5. Urllib Module
+### 6. PyautoGUI
+### 7. Schedule
+### 8. Pandas 
 
  
 ### Running and test

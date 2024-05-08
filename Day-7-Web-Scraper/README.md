@@ -25,7 +25,7 @@ The latest version of Python, offers a rich set of tools and libraries specifica
 ### 6. PyautoGUI
 ### 7. Schedule
 ### 8. Pandas 
-|              | Center-aligned | Right-aligned |
+|              | Requests | Beautiful Soup | lxml | Selenium
 | :---         |     :---      |          :--- |
 | Purpose      | git status     | git status    |
 | Ease-of-use  | git diff       | git diff      |

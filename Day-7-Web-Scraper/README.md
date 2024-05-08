@@ -26,15 +26,15 @@ The latest version of Python, offers a rich set of tools and libraries specifica
 ### 7. Schedule
 ### 8. Pandas 
 |              | Requests | Beautiful Soup | lxml | Selenium |
-| :---         | :---      | :--- |:---|:---|
-| Purpose      | git status     | git status    |||
-| Ease-of-use  | git diff       | git diff      |||
-| Speed        | git diff       | git diff      |||
-| Learning Curve| git diff       | git diff      |||
-| Documentation  | git diff       | git diff      |||
-| JavaScript Support  | git diff       | git diff      |||
-| CPU and Memory Usage  | git diff       | git diff      |||
-| Size of Web Scraping Project Supported  | git diff       | git diff      |||
+| :---         |:--- | :--- |:---|:---|
+| Purpose      | Simplify making HTTP requests|Parsing|Parsing|Simplify making HTTP requests|
+| Ease-of-use  |High|High|Medium|Medium|
+| Speed        | Fast       | Fast      | Very Fast|Slow|
+| Learning Curve| Very easy (beginner-friendly)       | Very easy (beginner-friendly)  |Easy|Easy|
+| Documentation  | Excellent       | Excellent      |Good|Good|
+| JavaScript Support  | None       | None      |None|Yes|
+| CPU and Memory Usage  | Low       | Low      |Low|High|
+| Size of Web Scraping Project Supported  | Large and small       | Large and small      |Large and small|Small|
 
 
  

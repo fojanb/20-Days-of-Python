@@ -9,7 +9,7 @@ Clone the repo to your computer. Go to your terminal and navigate to the repo fo
 
 ## Prerequisites & Installing
 
-Since Web-Scraper is a server side python application you need to run that from your terminal. Depend on which OS you are using that can be different. Here is a guide about how to run a node.js app on your computer if you are using windows: http://blog.gvm-it.eu/post/20404719601/getting-started-with-nodejs-on-windows. If you are using mac that would be easier. Just go to your terminal and navigate to the Hangman-CLI folder. Then you need to download and install all the python modules that are used in this application. So type "pip install" then hit enter. That would install the needed modules.
+Since Web-Scraper is a server side python application you need to run that from your terminal. Depend on which OS you are using that can be different. Here is a guide about how to run a node.js app on your computer if you are using windows: http://blog.gvm-it.eu/post/20404719601/getting-started-with-nodejs-on-windows. If you are using mac that would be easier. Just go to your terminal and navigate to the folder. Then you need to download and install all the python modules that are used in this application. So type "pip install" then hit enter. That would install the needed modules.
 
 Web scraping, the process of extracting data from websites, has emerged as a powerful technique to gather information from the vast expanse of the internet. In this CLI app, we’ll explore various Python libraries and modules commonly used for web scraping and delve into why Python 3 is the preferred choice for this task.
 

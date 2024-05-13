@@ -7,6 +7,7 @@ Body Mass Index (BMI) is a person's weight in kilograms divided by the square of
 |Metric System|BMI = Weight(in kilograms)/Height^2(in meters)|
 |Imperial System|BMI = 703*Weight(in pounds)/Height^2(in inches)|
 
+For this CLI application purposes we used the Meteric System formula.
 BMI ranges are defined as below :
 |BMI|Weight Status|
 |:--- |:--- |

@@ -1,7 +1,10 @@
 # BMI-Calculator
 
 BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat.
-Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in meters. A high BMI can indicate high body fatness.
+Body Mass Index (BMI) is a person's weight in kilograms divided by the square of height in meters. A high BMI can indicate high body fatness. There are two different formulas to calcualte BMI, Metric System and Imperial System.
+|Metric System|BMI = Weight(in kilograms)/Height^2(in meters)|
+|Imperial System|BMI = 703*Weight(in pounds)/Height^2(in inches)|
+
 BMI ranges are defined as below :
 |BMI|Weight Status|
 |:--- |:--- |

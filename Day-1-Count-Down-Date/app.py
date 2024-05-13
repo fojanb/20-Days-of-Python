@@ -4,7 +4,7 @@
 import logging
 from datetime import date
 logging.basicConfig(level=logging.INFO)
-user_inputs = input("Please enter your goal and deadline (e.g. yyyy-mm-dd) separated by colon :\n")
+user_inputs = input("Please enter your start and end date (e.g. yyyy-mm-dd) separated by colon. Here is an example> 2024-05-16:2024-05-20\n")
 
 user_inputs_dict = {"goal":user_inputs.split(":")[0],"deadline":user_inputs.split(":")[1]}
 deadline_date = date(int(user_inputs_dict["deadline"].split("-")[0]),int(user_inputs_dict["deadline"].split("-")[1]),int(user_inputs_dict["deadline"].split("-")[2]))

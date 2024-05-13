@@ -17,7 +17,7 @@ def truncate_float(float_number, decimal_places):
     multiplier = 10 ** decimal_places
     return int(float_number * multiplier) / multiplier
 
-def BMI_results():
+def results_BMI():
     if(user_measures["BMI"] < 18.5):
         print(f"\nYour BMI is {user_measures["BMI"]} - Underweight")
 
@@ -43,6 +43,6 @@ welcome_message()
 get_metrics(weight)
 get_metrics(height)
 calculate_BMI()
-BMI_results()
+results_BMI()
 
 

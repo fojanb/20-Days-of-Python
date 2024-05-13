@@ -1,6 +1,6 @@
 # Count-Down-Date
 
-Count-Down-Date is a CLI application that receives two user's inputs as start and end (dates) following format :
+Count-Down-Date is a CLI application that receives two user's inputs as start and end (dates) following format 
         yyyy-mm-dd:yyyy-mm-dd
 Left and right hand side date are representing the start and end date respectively, then calculates how many days are left till end date. It uses the date package and datetime module inside this package which is useful to know about and easy to use.
 

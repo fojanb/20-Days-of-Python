@@ -7,7 +7,7 @@ Body Mass Index (BMI) is a person's weight in kilograms divided by the square of
 |Metric System|BMI = Weight(in kilograms)/Height^2(in meters)|
 |Imperial System|BMI = 703*Weight(in pounds)/Height^2(in inches)|
 
-For this CLI application purposes we used the Meteric System formula.
+For this CLI application purposes we decided to use the Meteric System formula.
 BMI ranges are defined as below :
 |BMI|Weight Status|
 |:--- |:--- |
@@ -18,7 +18,7 @@ BMI ranges are defined as below :
 |35.0 - 39.9|Obesity Class 2|
 |Above 40|Obesity Class 3|
 
-BMI-Calculator is a CLI application which help you calculate your BMI.
+BMI-Calculator is a CLI application which help you calculate your BMI. For this purpose we used math package in Python. This package is a built-in package in Python and no need an extra installation. Just go ahead and import required modeules from this package on top of your file. We need power function for this application.
 
 ### Getting Started 
 
@@ -26,11 +26,8 @@ Clone the repo to your computer. Go to your terminal and navigate to the repo fo
 
 ## Prerequisites & Installing
 
-
-
  
 ### Running and test
-
 
 
 ## Deployment

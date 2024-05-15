@@ -6,13 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button id="btn">click</button>
-    <div id="data"></div>
+    <form method="GET" action="">
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" placeholder="Enter github username" autocomplete="off" required>
+        <button type="submit">List all the repos</button>
+    </form>
     <script>
-        document.getElementById("btn").addEventListener("click", async () => {
-            const response = await fetch("http://127.0.0.1:5000/api/data")
-            const data = await response.json()
-            document.querySelector("#data").textContent = data.name;
+        document.getElementById("username").addEventListener("change", (e) => {
+            let username = e.target.value;
+            document.querySelector("form").addEventListener("submit", () => {
+                document.querySelector("form").action = `http://127.0.0.1:5000/repositories?username=${username}`;
+            })
         })
     </script>
 </body>

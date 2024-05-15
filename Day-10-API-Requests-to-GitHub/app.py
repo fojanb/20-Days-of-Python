@@ -1,18 +1,26 @@
+# importing Flask and other modules
 from flask import Flask,jsonify,request,render_template
+
 from requests import get
 
+# Setup a server:
 app = Flask(__name__)
 
-@app.route('/api/data')
+# ----------------------------------------------
+#set route for /repositories 
+@app.route('/repositories',methods =["GET"])
 def get_data():
-    resposne = get(f"https://api.github.com/users/fojanb/repos")
-    data = {"name": resposne.json()[0]["name"]}
+    username = request.args.get('username')
+    resposne = get(f"https://api.github.com/users/{username}/repos")
+    data = resposne.json()
     return jsonify(data)
+# ----------------------------------------------
 
-
+#set route for homepage 
 @app.route('/')
 def get_home(name=None):
     return render_template('index.html',name=name)
-
+# ----------------------------------------------
+# run the flask app
 if __name__ == "__main__":
     app.run()

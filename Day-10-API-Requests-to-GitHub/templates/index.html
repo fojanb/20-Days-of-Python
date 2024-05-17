@@ -12,10 +12,12 @@
         <button type="submit">List all the repos</button>
     </form>
     <script>
+  
+        let baseURL = "http://127.0.0.1:5000"
         document.getElementById("username").addEventListener("change", (e) => {
             let username = e.target.value;
             document.querySelector("form").addEventListener("submit", () => {
-                document.querySelector("form").action = `http://127.0.0.1:5000/repositories?username=${username}`;
+                document.querySelector("form").action = `${baseURL}/repositories?username=${username}`;
             })
         })
     </script>

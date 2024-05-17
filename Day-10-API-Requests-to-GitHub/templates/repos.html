@@ -8,16 +8,16 @@
 </head>
 
 <body>
-    Here is the repos :
-
+    <div>
+        Here is the repos for user name 
+        <span style="font-weight: bolder;color: blueviolet;">{{ data | safe }}
+        </span>
+    </div>
     <a href="/">Back to home</a>
-    <script>
-        window.addEventListener("load", async () => {
-            const response = await fetch("http://127.0.0.1:5000/my_repos");
-            const data = await response.json();
-            console.log(data);
-        })
-    </script>
+
 </body>
+<script>
+
+</script>
 
 </html>

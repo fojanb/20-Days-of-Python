@@ -3,7 +3,7 @@ from flask import Flask,request,render_template
 from requests import get
 import json
 
-# Setup a server:
+# We need a Flask object to setup a server:
 app = Flask(__name__)
 
 # ----------------------------------------------

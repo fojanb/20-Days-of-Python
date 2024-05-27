@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flask App</title>
 </head>
 <body>
     <form method="GET" action="">
@@ -11,15 +11,6 @@
         <input type="text" id="username" name="username" placeholder="Enter github username" autocomplete="off" required>
         <button type="submit">List all the repos</button>
     </form>
-    <script>
-  
-        let baseURL = "http://127.0.0.1:5000"
-        document.getElementById("username").addEventListener("change", (e) => {
-            let username = e.target.value;
-            document.querySelector("form").addEventListener("submit", () => {
-                document.querySelector("form").action = `${baseURL}/repositories?username=${username}`;
-            })
-        })
-    </script>
+    <script  type="text/javascript" src="{{ url_for('static', filename = 'index.js') }}"></script>
 </body>
 </html>

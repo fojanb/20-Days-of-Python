@@ -1,7 +1,7 @@
 # importing Flask and other modules
-from flask import Flask,jsonify,request,render_template,make_response
-
+from flask import Flask,request,render_template
 from requests import get
+import json
 
 # Setup a server:
 app = Flask(__name__)
@@ -12,8 +12,8 @@ app = Flask(__name__)
 def get_data():
     username = request.args.get('username')
     resposne = get(f"https://api.github.com/users/{username}/repos")
-    data = jsonify(resposne.json())
-    return render_template('repos.html',data=data)
+    data = json.dumps(resposne.json())
+    return render_template('repositories.html',data=data,username=username)
 
 # ----------------------------------------------
 #set route for homepage 
